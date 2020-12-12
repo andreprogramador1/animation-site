@@ -15,6 +15,21 @@ export const MenuOpened = styled(motion.div)`
   }
 `;
 
-export const MenuLinkContainer = styled(motion.div)`
-  
+export const MenuLinkContainerLeft = styled(motion.div)`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    height: 80vh;
+    margin-left: 80px;
+
+    a {
+      text-decoration: none; 
+      color: white;
+      font-size: 60px;
+      font-weight: 700;
+    }
+    a:first-child{
+      margin-top: 120px;
+    }
 `;
