@@ -2,6 +2,7 @@ import React from 'react'
 import { NavDesktop, BurgerContainer } from './styles'
 import { Link } from 'react-router-dom'
 
+
 export const NavBar = () => {
   return (
     <NavDesktop>
@@ -16,7 +17,7 @@ export const NavBar = () => {
         </BurgerContainer>
       </a>
       <img src="https://www.aplusc.tv/assets/site-images/ac.gif" alt="logo"/>
-      <a href="#">Contact us</a>
+      <a href="#" className='contact'>Contact us</a>
     </NavDesktop>
   );
 }
