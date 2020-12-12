@@ -57,7 +57,7 @@ export const IframeContainer = styled.div`
       color: #180f59;
       background-color: white; 
       border-radius: 500px;
-      font-size: 20px;
+      font-size: 60px;
   
     }
   }

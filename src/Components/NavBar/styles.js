@@ -23,7 +23,7 @@ export const NavDesktop = styled.div`
     //padding: 10px 20px;
     color: white;
     justify-content: space-evenly;
-    
+    cursor: pointer;
   }
 
   .contact {
@@ -38,6 +38,9 @@ export const NavDesktop = styled.div`
     justify-content: space-evenly;
     text-decoration: none;
   }
+
+  
+
 `;
 
 export const BurgerContainer = styled.div`
