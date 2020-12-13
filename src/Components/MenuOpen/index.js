@@ -7,12 +7,21 @@ export const MenuOpen = () => {
 
   const variants = {
     hidden: { opacity: 0, y: '-100%'},
-
     visible: {
       opacity: 1,
       y: 0
     }
   }
+
+  // const ballVariants = {
+  //   hidden: { opacity: 0, scale: 0},
+  //   visible: {
+  //     opacity: 1,
+  //     whileHover: {
+  //       scale: 1.1
+  //     }
+  //   }
+  // }
 
   return (
     <MenuOpened
@@ -23,14 +32,40 @@ export const MenuOpen = () => {
       <div className="left-item">
 
         <MenuLinkContainerLeft>
-          <a href="#">Home</a>
-          <a href="#">Services</a>
-          <a href="#">Work</a>
-          <a href="#">About us</a>
-          <a href="#">Studios</a>
-          <a href="#">Carrers</a>
-          <a href="#">Blog</a>
-          <a href="#">Contact us</a>
+
+          <a  href='#' className="inner-link-container">
+            <span>Home</span>
+            
+          </a>
+          <a  href='#' className="inner-link-container">
+            <span>Services</span>
+            
+          </a>
+          <a  href='#' className="inner-link-container">
+            <span>Work</span>
+            
+          </a>
+          <a  href='#' className="inner-link-container">
+            <span>About us</span>
+            
+          </a>
+          <a  href='#' className="inner-link-container">
+            <span>Studios</span>
+            
+          </a>
+          <a  href='#' className="inner-link-container">
+            <span>Carrers</span>
+            
+          </a>
+          <a  href='#' className="inner-link-container">
+            <span>Blog</span>
+            
+          </a>
+          <a  href='#' className="inner-link-container">
+            <span>Contact us</span>
+            
+          </a>
+          
         </MenuLinkContainerLeft>
 
       </div>

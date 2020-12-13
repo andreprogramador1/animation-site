@@ -21,19 +21,43 @@ export const MenuLinkContainerLeft = styled(motion.div)`
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
+    width: 80%;
     height: 80vh;
     margin-left: 80px;
 
-    a {
-      text-decoration: none; 
-      color: white;
-      font-size: 60px;
-      font-weight: 700;
-    }
-    a:first-child{
+
+    &:first-child {
       margin-top: 120px;
     }
+
+    .inner-link-container {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      text-decoration: none;
+      span {
+        color: white;
+        font-size: 60px;
+        font-weight: 700;
+      }
+     
+      &:after {
+        content: '';
+        background-color: #fdd51c;
+        width: 25px;
+        height: 25px;
+        border-radius: 50%;
+        transform: scale(0);
+        transition: transform 0.2s;
+      }
+
+      &:hover:after {
+          transform: scale(1);
+        
+      }
+    }
+
+    
 `;
 
 export const MenuLinkContainerRight = styled(motion.div)`
