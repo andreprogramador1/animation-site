@@ -33,3 +33,31 @@ export const MenuLinkContainerLeft = styled(motion.div)`
       margin-top: 120px;
     }
 `;
+
+export const MenuLinkContainerRight = styled(motion.div)`
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin-right: 30px;
+
+    .social-container {
+      display: flex;
+      flex-wrap: wrap;
+      img {
+        width: 50px;
+      }
+      img:not(first-child) {
+        margin-left: 70px;
+      }
+    }
+
+    strong {
+      width: 100%;
+      color: white;
+      font-size: 40px;
+      margin-left: 200px;
+      margin-bottom: 20px;
+    }
+`;
