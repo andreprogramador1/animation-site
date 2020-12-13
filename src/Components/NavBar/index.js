@@ -2,10 +2,11 @@ import React, { useState } from 'react'
 import { NavDesktop, BurgerContainer } from './styles'
 import { Link } from 'react-router-dom'
 import {motion} from 'framer-motion'
+import {MenuOpen} from '../MenuOpen'
 
 export const NavBar = () => {
 
-  const [active, setActive] = useState('false')
+  const [active, setActive] = useState(false)
 
   const handleToggle = () => {
     setActive(!active);
@@ -20,6 +21,9 @@ export const NavBar = () => {
   }
 
   return (
+    <>
+    {active && <MenuOpen/>}
+    
     <NavDesktop>
       <motion.a
       to='#' className='background-left-nav-item'
@@ -28,6 +32,7 @@ export const NavBar = () => {
       variants={variants}
       onClick={handleToggle}
       >
+        
         <span>Menu</span>
         <BurgerContainer>
           <div className='item-1'></div>
@@ -40,5 +45,6 @@ export const NavBar = () => {
       <img src="https://www.aplusc.tv/assets/site-images/ac.gif" alt="logo"/>
       <a href="#" className='contact'>Contact us</a>
     </NavDesktop>
+    </>
   );
 }

@@ -1,10 +1,25 @@
 import React from 'react'
 import {MenuOpened} from './styles'
 import {MenuLinkContainerLeft, MenuLinkContainerRight} from './styles'
+import {motion} from 'framer-motion'
 
 export const MenuOpen = () => {
+
+  const variants = {
+    hidden: { opacity: 0, y: '-100%'},
+
+    visible: {
+      opacity: 1,
+      y: 0
+    }
+  }
+
   return (
-    <MenuOpened>
+    <MenuOpened
+      animate='visible'
+      initial='hidden'
+      variants={variants}
+    >
       <div className="left-item">
 
         <MenuLinkContainerLeft>

@@ -5,7 +5,7 @@ export const NavDesktop = styled.div`
   justify-content: space-between;
   align-items: center;
   margin-top: 10px;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   width: 100%;
 

@@ -4,7 +4,9 @@ import {motion} from 'framer-motion'
 export const MenuOpened = styled(motion.div)`
   height: 100vh;
   display: flex;
-
+  position: fixed;
+  z-index: 1;
+  width: 100%;
   .left-item {
     background-color: #8644ff;
     flex: 1;
