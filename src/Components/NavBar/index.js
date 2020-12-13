@@ -7,6 +7,11 @@ import {MenuOpen} from '../MenuOpen'
 export const NavBar = () => {
 
   const [active, setActive] = useState(false)
+  const [burger, setBurger] = useState('')
+
+  const handleBurger = () => {
+    setBurger(!burger);
+  };
 
   const handleToggle = () => {
     setActive(!active);
@@ -35,9 +40,10 @@ export const NavBar = () => {
         
         <span>Menu</span>
         <BurgerContainer>
-          <div className='item-1'></div>
-          <div className='item-2'></div>
-          <div className='item-3'></div>
+          
+          <motion.div className={active ? 'item-active-1' : 'item-1'}></motion.div>
+          <motion.div className='item-2'></motion.div>
+          <motion.div className={active ? 'item-active-3' : 'item-3'}></motion.div>
           <div className='item-4' style={{ display: 'none' }}></div>
           <div className='item-5' style={{ display: 'none' }}></div>
         </BurgerContainer>
