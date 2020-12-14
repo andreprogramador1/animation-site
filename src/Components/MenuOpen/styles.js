@@ -7,6 +7,7 @@ export const MenuOpened = styled(motion.div)`
   position: fixed;
   z-index: 1;
   width: 100%;
+
   .left-item {
     background-color: #8644ff;
     flex: 1;
@@ -52,7 +53,7 @@ export const MenuLinkContainerLeft = styled(motion.div)`
       }
 
       &:hover:after {
-          transform: scale(1);
+          transform: scale(1.3);
         
       }
     }
