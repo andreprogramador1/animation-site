@@ -1,14 +1,28 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import {MiddleContainer} from './styles'
-
+import { gsap } from 'gsap'
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 export const MiddleContent = () => {
+
+  gsap.registerPlugin(ScrollTrigger);  
+
+  const imgRef = useRef();
+
+  gsap.to('.img-container', {
+    scrollTrigger: {
+      start: ' .content',
+      end: 'bottom .content',
+      pin: '.img-container',
+      // markers: true
+    }
+  })
 
 
   return (
     <>
     <MiddleContainer>
-      <div className='img-container'>
+      <div className='img-container' ref={imgRef}>
         <img src="https://www.aplusc.tv/assets/uploads/_sideHalfImage/Website-Main-Page_05.jpg" alt="image"/>
       </div>
       <div className='content'>
@@ -149,4 +163,5 @@ export const MiddleContent = () => {
     </div>
     </>
   );
+  
 }
