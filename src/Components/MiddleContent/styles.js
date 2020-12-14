@@ -14,7 +14,7 @@ export const MiddleContainer = styled.div`
     width: 50vw;
     height: 100vh;
     object-fit: cover;
-   
+    z-index: -99;
   }
 
   .content {

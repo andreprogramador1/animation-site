@@ -11,13 +11,15 @@ export const MiddleContent = () => {
 
   gsap.to('.img-container', {
     scrollTrigger: {
-      start: ' .content',
-      end: 'bottom .content',
+      trigger: '.content',
+      start: 'top top',
+      end: 'bottom bottom',
       pin: '.img-container',
-      // markers: true
+      markers: true
     }
   })
-
+  // start: 'top top',
+  // end: 'bottom bottom',
 
   return (
     <>
@@ -41,10 +43,16 @@ export const MiddleContent = () => {
         <h2>make it happen!</h2>
         <p className="p-container">If you have a fully shaped animation brief, script, or even the start of an idea, we’re happy to chat. Our experienced production team are ready to run through your concept and help with scheduling, budgeting and technical queries.</p>
         <p className="p-container">Get in touch with us HERE</p>
+        
       </div>
 
+      
+
+
     </MiddleContainer>
-    <div style={{ width: '100%' }}>
+    
+    <div style={{ width: '100vw', backgroundColor: 'blue', height: '2200px', zIndex: '99' }}></div>
+    {/* <div style={{ width: '100%' }}>
       <p>We're A+C, a UK animation studio & production company</p>  
           <p>Website Main Page 05</p>
           <p>As specialists in stop-motion and animation for advertising and social content, we produce anything animated - from paper-craft to motion design.</p>
@@ -57,7 +65,7 @@ export const MiddleContent = () => {
           <p>If you have a fully shaped animation brief, script, or even the start of an idea, we’re happy to chat. Our experienced production team are ready to run through your concept and help with scheduling, budgeting and technical queries.</p>
 
         <p>Get in touch with us HERE</p>
-    </div>
+    </div> */}
     </>
   );
   
