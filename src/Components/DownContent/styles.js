@@ -45,10 +45,11 @@ export const Container = styled.div`
     .card-2 {
       flex: 1;
       position: relative;
+      margin-left: 40px;
 
       & > h6 {
         position: absolute;
-        left: 9%;
+        left: 5%;
         bottom: 8%;
         width: fit-content;
         background-color: white;

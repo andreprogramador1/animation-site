@@ -67,5 +67,31 @@ export const MiddleContainer = styled.div`
       }
     }
   }
+
+  @media (max-width: 1000px) {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+
+    .content {
+      h2 {
+        background-color: transparent;
+      }
+    }
+
+    .img-container {
+      position: static;
+      top: unset;
+    }
+
+    img {
+      width: 100%;
+      height: unset;
+      
+    }
+
+  }
 `;
 

@@ -24,10 +24,17 @@ export const DownContent = () => {
 
         <div className="card-2">
 
+          <img src={shoes} alt="shoes"/>
+          <h6>LEGO - 'LEGO ZX'</h6>
+
+        </div>
+
+        {/* <div className="card-2">
+
           <img src={room} alt="room" className='second-img'/>
           <h6>Homesense - 'Sunday Brunch Idents'</h6>
 
-        </div>
+        </div> */}
 
       </div>
 
