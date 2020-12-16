@@ -7,6 +7,7 @@ export const MenuOpened = styled(motion.div)`
   position: fixed;
   z-index: 1;
   width: 100%;
+  
 
   .left-item {
     background-color: #8644ff;
@@ -16,6 +17,13 @@ export const MenuOpened = styled(motion.div)`
     background-color: #7b9ce9;
     flex: 1;
   }
+
+  
+
+    //-------------------ANIMATION TRIGGER--------------------------------------
+    @media (max-width: 720px) {
+      flex-direction: column;
+    }
 `;
 
 export const MenuLinkContainerLeft = styled(motion.div)`
@@ -24,7 +32,7 @@ export const MenuLinkContainerLeft = styled(motion.div)`
     justify-content: center;
     width: 80%;
     height: 80vh;
-    margin-left: 80px;
+    margin-left: 30px;
 
 
     &:first-child {
@@ -58,7 +66,17 @@ export const MenuLinkContainerLeft = styled(motion.div)`
       }
     }
 
-    
+    @media (max-width: 720px) {
+      height: unset;
+      margin-left: 30px;
+      .inner-link-container {
+        
+          span {
+            font-size: 30px;
+          }
+        }
+
+    }
 `;
 
 export const MenuLinkContainerRight = styled(motion.div)`
@@ -67,17 +85,18 @@ export const MenuLinkContainerRight = styled(motion.div)`
     justify-content: center;
     align-items: center;
     height: 100vh;
-    margin-right: 30px;
+    //margin-right: 30px;
 
     .social-container {
       display: flex;
       flex-wrap: wrap;
+      width: 100%;
+      justify-content: space-evenly;
+      
       img {
         width: 50px;
       }
-      img:not(first-child) {
-        margin-left: 70px;
-      }
+      
     }
 
     strong {
@@ -87,5 +106,18 @@ export const MenuLinkContainerRight = styled(motion.div)`
       margin-left: 200px;
       margin-bottom: 20px;
     }
+
+    @media (max-width: 720px) {
+
+      height: 50vh;
+      
+
+      .social-container {
+        width: 100%;
+        justify-content: space-evenly;
+        padding: 0 80px;
+      }
+    }
+
 `;
 
