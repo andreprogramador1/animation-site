@@ -20,4 +20,9 @@ export const GlobalStyles = createGlobalStyle`
     -webkit-font-variant-ligatures: none;
     overflow-x: hidden;
   }
+
+  #root {
+    max-width: 100vw;
+    overflow-x: hidden;
+  }
 `;

@@ -32,10 +32,12 @@ export const MiddleContainer = styled.div`
       padding: .25rem 1.5rem;
       line-height: 1.2;
       border-radius: 500px;
-      transform: translateX(-100px);
+      transform: translateX(-200px);
       font-size: 3.5833333333rem;
-      white-space: nowrap;
+      //white-space: nowrap;
+      flex-wrap: wrap;
       width: fit-content;
+      text-align: start;
     }
 
     p {
@@ -57,4 +59,13 @@ export const MiddleContainer = styled.div`
       margin-top: 100px;
     }
   }
+
+  @media (max-width: 1250px) {
+    .content {
+      h2 {
+        font-size: 40px;
+      }
+    }
+  }
 `;
+

@@ -15,7 +15,7 @@ export const MiddleContent = () => {
       start: 'top top',
       end: 'bottom bottom',
       pin: '.img-container',
-      markers: true
+      //markers: true
     }
   })
   // start: 'top top',
@@ -51,7 +51,7 @@ export const MiddleContent = () => {
 
     </MiddleContainer>
     
-    <div style={{ width: '100vw', backgroundColor: 'blue', height: '2200px', zIndex: '99' }}></div>
+    {/* <div style={{ width: '100vw', backgroundColor: 'blue', height: '2200px', zIndex: '99' }}></div> */}
     {/* <div style={{ width: '100%' }}>
       <p>We're A+C, a UK animation studio & production company</p>  
           <p>Website Main Page 05</p>
