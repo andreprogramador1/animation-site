@@ -9,6 +9,7 @@ export const Container = styled.div`
 
   .card-container {
     display: flex;
+    flex-direction: row;
     justify-content: center;
     align-items: center;
     width: 65%;
@@ -81,6 +82,18 @@ export const Container = styled.div`
         font-weight: 800;
         padding: 10px 20px;
         cursor: pointer;
+      }
+    }
+
+    @media (max-width: 1000px) {
+
+      .card-container {
+        flex-direction: column;
+
+        .card-2 {
+          margin-left: 0;
+          margin-top: 10px;
+        }
       }
     }
 `;

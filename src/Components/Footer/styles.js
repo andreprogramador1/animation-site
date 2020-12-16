@@ -17,6 +17,11 @@ export const MenuOpened = styled(motion.div)`
     background-color: #7b9ce9;
     flex: 1;
   }
+
+  
+  @media (max-width: 1000px) {
+    flex-direction: column;
+  }
 `;
 
 export const MenuLinkContainerLeft = styled(motion.div)`
@@ -59,6 +64,16 @@ export const MenuLinkContainerLeft = styled(motion.div)`
       }
     }
 
+    @media (max-width: 1000px) {
+      height: unset;
+      margin-bottom: 50px;
+
+      .inner-link-container {
+        span {
+          font-size: 40px;
+        }
+      }
+    }
     
 `;
 
@@ -73,15 +88,21 @@ export const MenuLinkContainerRight = styled(motion.div)`
     .social-container {
       display: flex;
       flex-wrap: wrap;
+      height: 20vh;
+      width: 100%;
+      justify-content: space-evenly;
+      align-items: center;
+
       img {
         width: 50px;
         cursor: pointer;
         
       }
-      img:not(first-child) {
+      /* img:not(first-child) {
         margin-left: 70px;
-      }
+      } */
     }
+
 
     strong {
       width: 100%;
@@ -90,4 +111,12 @@ export const MenuLinkContainerRight = styled(motion.div)`
       margin-left: 200px;
       margin-bottom: 20px;
     }
+
+    @media (max-width: 1000px) {
+      height: unset;
+      margin-right: 0;
+      padding: 50px 0;
+
+    }
+
 `;
