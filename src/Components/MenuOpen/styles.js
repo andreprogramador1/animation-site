@@ -93,8 +93,10 @@ export const MenuLinkContainerRight = styled(motion.div)`
       width: 100%;
       justify-content: space-evenly;
       
+      
       img {
         width: 50px;
+        cursor: pointer;
       }
       
     }

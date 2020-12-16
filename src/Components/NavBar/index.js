@@ -38,7 +38,7 @@ export const NavBar = () => {
       onClick={handleToggle}
       >
         
-        <span>Menu</span>
+        <span>{active ? 'Close' : 'Menu'}</span>
         <BurgerContainer>
           
           <motion.div className={active ? 'item-active-1' : 'item-1'}></motion.div>
