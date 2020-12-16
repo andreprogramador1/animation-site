@@ -76,9 +76,20 @@ export const MiddleContainer = styled.div`
     
 
     .content {
+
+      width: unset;
+      transform: none;
+
       h2 {
+        transform: none;
         background-color: transparent;
+        margin-left: 10px;
       }
+
+      .p-container {
+        padding: 40px;
+      }
+
     }
 
     .img-container {
