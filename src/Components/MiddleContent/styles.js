@@ -76,7 +76,7 @@ export const MiddleContainer = styled.div`
     
 
     .content {
-
+      z-index: 0;
       width: unset;
       transform: none;
 
