@@ -9,15 +9,23 @@ export const MiddleContent = () => {
 
   const imgRef = useRef();
 
-  gsap.to('.img-container', {
-    scrollTrigger: {
-      trigger: '.content',
-      start: 'top top',
-      end: 'bottom bottom',
-      pin: '.img-container',
-      //markers: true
-    }
-  })
+
+  //IN ORDER TO GSAP WORK IT NEEDS TO BE PUT IN USE-EFFECT OTHERWISE WONT WORK !IMPORTANT
+  useEffect(() => {
+    gsap.to('.img-container', {
+      scrollTrigger: {
+        trigger: '.content',
+        start: 'top top',
+        end: 'bottom bottom',
+        pin: '.img-container',
+        //markers: true
+      }
+    })
+
+  }, []);
+
+
+  
   // start: 'top top',
   // end: 'bottom bottom',
 
